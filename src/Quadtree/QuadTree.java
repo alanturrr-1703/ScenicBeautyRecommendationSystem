@@ -16,5 +16,13 @@ public class QuadTree {
         nodes = new ArrayList<>();
         this.boundary = boundary;
     }
+    // Travelling the tree using the Depth First Search Algorithm//
+    void DFS(QuadTree tree){
+        if (tree == null) return;
+        System.out.printf(
+                "\n Level: %d [X1=%d Y1=%d] \t[X2=%d Y2=%d]",
+                tree.level, tree.boundary.getxMin(), tree.boundary.getxMax(), tree.boundary.getyMax()
+        );
 
+    }
 }

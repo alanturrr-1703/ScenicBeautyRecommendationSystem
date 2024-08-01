@@ -17,7 +17,7 @@ class Boundary {
         return yMax;
     }
 
-    public Boundry(int xMin, int yMin, int xMax, int yMax) {
+    public Boundary(int xMin, int yMin, int xMax, int yMax) {
         super();
         this.xMin = xMin;
         this.yMin = yMin;

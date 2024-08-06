@@ -1,20 +1,16 @@
 package Quadtree;
 
 public class Rectangle {
-    private float x;
-    private float y;
-    private float w;
-    private float h;
     private final float left;
     private final float right;
     private final float top;
     private final float bottom;
+    private float x;
+    private float y;
+    private float h;
+    private float w;
 
     Rectangle(float x, float y, float w, float h){
-        this.x = x;
-        this.y = y;
-        this.w = w;
-        this.h = h;
 
         this.left = (x - w) / 2;
         this.right = (x + w) / 2;
@@ -27,6 +23,7 @@ public class Rectangle {
     public Rectangle subdivide(Rectangle quadrant) {
         switch (quadrant){
             case ('ne'):
+                return new Rectangle(this.x + this.w / 4, this.y - this.h / 4, this.w / 2, this.h/2);
         }
     }
 }
